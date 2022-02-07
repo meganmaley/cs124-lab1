@@ -1,0 +1,49 @@
+h1{
+    font-family: "Courier New", Courier;
+    font-size: 50px;
+    text-align: left;
+    color: steelblue;
+}
+
+body{
+    padding-left: 20pt;
+}
+
+.plus-button {
+    border-radius: 50%;
+    border-width: thin;
+    color: steelblue;
+    border-color: steelblue;
+}
+
+iframe {
+    background-color: snow;
+    align: center;
+    width: 360px;
+    height: 640px;
+}
+
+h2 {
+    font-family: Avenir;
+    font-weight: bold;
+}
+
+label.newItem {
+    font-family: Avenir;
+}
+
+label.listItem {
+    font-family: Avenir;
+}
+
+p {
+    font-family: Avenir;
+}
+
+label.listItem:hover {
+    color: darkgrey;
+}
+
+#editbox {
+    color: darkgrey;
+}
