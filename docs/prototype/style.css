@@ -14,6 +14,11 @@ body{
     border-width: thin;
     color: steelblue;
     border-color: steelblue;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.05), 0 6px 20px 0 rgba(0,0,0,0.05);
+}
+
+.plus-button:hover {
+    background-color: lightgray;
 }
 
 iframe {
@@ -58,6 +63,15 @@ label.listItem:hover {
     height: 30px;
     grid-row:3;
     grid-column:1;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.07), 0 6px 8px 0 rgba(0,0,0,0.07);
+    display: block;
+    position: fixed;
+    bottom: 0;
+    margin: 20% 20% 20% 20%;
+    margin-left: 10%;
+}
+.uncompleted:hover {
+    background-color: lightgray;
 }
 
 .deleteCompleted {
@@ -68,5 +82,22 @@ label.listItem:hover {
     height: 30px;
     grid-row:4;
     grid-column:1;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.05), 0 6px 6px 0 rgba(0,0,0,0.05);
+    display: block;
+    position: fixed;
+    bottom: 0;
+    margin: 20% 20% 10% 20%;
+    margin-left: 10%;
 }
 
+.deleteCompleted:hover {
+    background-color: lightgray;
+}
+
+.hidden {
+    display: none;
+}
+
+.fa-solid{
+   font-size: x-small;
+}
