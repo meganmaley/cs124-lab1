@@ -8,8 +8,9 @@ export default function DataContainer(props) {
 
     function handleChange(taskID, field, value) {
         console.log(taskID, field, value);
-        setData(data.map(taskItem => taskItem.taskId == taskID ? {...taskItem, [field]:value}:taskItem))
+        setData(data.map(taskItem => taskItem.taskId === taskID ? {...taskItem, [field]:value}:taskItem))
     }
+
 
     function handlePlusClick() {
         const newData = data.concat(
@@ -20,12 +21,18 @@ export default function DataContainer(props) {
             }
         )
         setData(newData);
+        // props.setEditedID(taskId); how do we set the edited ID
+
     }
 
-    console.log("container is rendering")
+
     return (
         <div>
-            <App data={data} handleChange={handleChange} handlePlusClick={handlePlusClick}/>
+            <App data={data}
+                 onDataChange={setData}
+                 handleChange={handleChange}
+                 handlePlusClick={handlePlusClick}
+            />
         </div>
     )
 }
