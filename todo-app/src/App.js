@@ -38,7 +38,7 @@ function App(props) {
           <label htmlFor="plus" className="newItem"> Create new item </label>
           <br/>
           <button className="uncompleted" type="button" id="showUncom" onClick = {handleUncompleted}>
-                  {hideUncompleted? "Hide completed":"Show all items"} </button>
+              {hideUncompleted? "Hide completed items":"Show all items"} </button>
           <button className="deleteCompleted" type="button" id="delete" onClick = {handleDelete}> Delete completed items </button>
       </div>
 

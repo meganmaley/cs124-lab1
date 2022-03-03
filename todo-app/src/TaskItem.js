@@ -15,9 +15,9 @@ export default function TaskItem(props) {
                 props.handleChange(task.taskId, "isCompleted", e.target.checked)}
         />
 
-        <input class = "newItem" type = "text" value = {props.taskName} id = {props.taskId}
+        <input className = "newItem isEditing" type = "text" value = {props.taskName} id = {props.taskId}
                onChange={(e)=> props.handleChange(task.taskId, "taskName", e.target.value)}
-               onKeyPress={(e) => e.key === 'Enter'} />
+               onFocus = {(e)=> props.setEditedID(task.taskId)}/>
 
        {/*{task.taskId === props.editedID?:*/}
        {/*     <input type = "text"/>*/}
