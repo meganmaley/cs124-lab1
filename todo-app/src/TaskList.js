@@ -3,8 +3,6 @@ import {useState} from "react";
 
 export default function TaskList(props){
 
-    const [editedID, setEditedID] = useState(null);
-
     return (
         <div>
             <table>
@@ -15,8 +13,8 @@ export default function TaskList(props){
                                       isCompleted={t.isCompleted}
                                       taskName={t.taskName}
                                       handleChange = {props.handleChange}
-                                      editedID = {editedID}/>)}
-
+                                      editedID = {props.editedID}
+                                      setEditedID = {props.setEditedID}/>)}
                 </tbody>
             </table>
         </div>)

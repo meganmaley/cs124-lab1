@@ -10,7 +10,7 @@ function App(props) {
     const [hideUncompleted, setHideUncompleted] = useState(true);
     const [displayData, setDisplayData] = useState(props.data);
 
-    useEffect(()=>{setDisplayData(props.data)},[props.data])
+    useEffect(()=>{setDisplayData(props.data)},[props.data]);
 
     function handleUncompleted(){
         if (hideUncompleted) {
@@ -33,7 +33,7 @@ function App(props) {
   return (
       <div>
           <AppHeader/>
-          <TaskList data={displayData} handleChange={props.handleChange}/>
+          <TaskList data={displayData} handleChange={props.handleChange} editedID={props.editedID} setEditedID = {props.setEditedID} />
           <button className="plus-button" type="button" id="plus" onClick = {props.handlePlusClick}> + </button>
           <label htmlFor="plus" className="newItem"> Create new item </label>
           <br/>
@@ -41,7 +41,6 @@ function App(props) {
               {hideUncompleted? "Hide completed items":"Show all items"} </button>
           <button className="deleteCompleted" type="button" id="delete" onClick = {handleDelete}> Delete completed items </button>
       </div>
-
   );
 }
 

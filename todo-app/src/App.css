@@ -35,6 +35,10 @@ label.listItem:hover {
   width: 230px;
   font-family: Avenir;
 }
+#label {
+  width: 230px;
+  font-family: Avenir
+}
 
 .uncompleted {
   font-family: Avenir;
